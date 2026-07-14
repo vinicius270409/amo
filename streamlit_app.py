@@ -11,7 +11,6 @@ nome = st.text_input('Digite seu nome aqui:')
 
 if nome:
     st.write(f"### Olá, {nome}! ❤️")
-    st.write("Eu criei esse site em Python só para te dizer o quanto você é especial para mim.")
     
     # Botão surpresa
     if st.button("Clique aqui para uma surpresa"):
