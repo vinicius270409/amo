@@ -12,15 +12,16 @@ nome = st.text_input('Digite seu nome aqui:')
 if nome:
     st.write(f"### Olá, {nome}! ❤️")
     
-    # Botão surpresa
-    if st.button("Clique aqui para uma surpresa"):
-        st.balloons() # Isso faz voar balões na tela do celular dela!
-        st.success("EU TE AMO MUITO! Você é o amor da minha vida! ")
-        
-        # Código da idade que você já tinha feito, integrado de forma fofa
+    # Pergunta a idade logo abaixo do nome
+    idade = st.text_input('Me diz sua idade atual ai:')
+    
+    # Se ela colocar a idade, calcula o ano
+    if idade:
+        ano = 2026 - int(idade)
+        st.write(f"Sabia que o mundo ficou muito mais bonito em **{ano}**? Que foi o ano que você nasceuuu")
         st.write("---")
-        idade = st.text_input('Me diz sua idade atual ai:')
         
-        if idade:
-            ano = 2026 - int(idade)
-            st.write(f"Sabia que o mundo ficou muito mais bonito em **{ano}**? Que foi o ano que você nasceuuu")
+        # O botão da surpresa aparece no final como o grande prêmio!
+        if st.button("Clique aqui para uma surpresa"):
+            st.balloons() # Isso faz voar balões na tela do celular dela!
+            st.success("EU TE AMO MUITO! Você é o amor da minha vida! ")
